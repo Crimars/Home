@@ -31,12 +31,13 @@ public class Lesson_1 {
     }
     public static boolean negatOrPositive(int a){
           return a < 0;}
-    public static void name(String name){
-        System.out.println("Привет, "+name+"!");
+
+    public static void name(String txtToPrint){
+        System.out.println("Привет, "+txtToPrint+"!");
     }
 
 
-    }
+}
 
 
 
