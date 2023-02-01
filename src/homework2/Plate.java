@@ -20,7 +20,7 @@ public class Plate {
     }
 
 
-    public void decreaseFood(int n) {
+    public boolean decreaseFood(int n) {
         //food -= n;
         if (food == n) {
             System.out.println("еда полностью съедена");}
@@ -31,6 +31,6 @@ public class Plate {
         }
 
 
-
+        return true;
     }
 }

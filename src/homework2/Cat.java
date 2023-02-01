@@ -12,9 +12,15 @@ public class Cat {
         this.satiety = true;
     }
 
-    public void eat(Plate p) {
-        if p.decreaseFood(apettite);
-    }
+    public void  eat(Plate p) {
+        if (p.decreaseFood(apettite)){
+            System.out.println("кошка наелась");}
+        else{
+            System.out.println("кошка голодная");}
+
+
+        }
+
     public boolean hungry() {
         if (!satiety) {
             System.out.println("cыт");
