@@ -7,30 +7,36 @@ public class Plate {
     public Plate(int food) {
         this.food = food;
     }
+
     public void info() {
         System.out.println("plate: " + food);
     }
 
-    public int getFood () {
+    public int getFood() {
         return food;
     }
 
-    public void setFood ( int food){
+    public void setFood(int food) {
         this.food = food;
     }
 
-
     public boolean decreaseFood(int n) {
         //food -= n;
-        if (food == n) {
-            System.out.println("еда полностью съедена");}
-        else if (n <= 0){
-            System.out.println("еда съедена");
+//        if (food == n) {
+//            System.out.println("еда полностью съедена");}
+//        else if (n <= 0){
+//            System.out.println("еда съедена");
+//        } else {
+//            System.out.println("в миске нет еды");
+//        }
+
+        if (food >= n) {
+            System.out.println("Удалось поесть");
+            food -= n;
+            return true;
         } else {
-            System.out.println("в миске нет еды");
+            System.out.println("В миске нет еды");
+            return false;
         }
-
-
-        return true;
     }
 }
